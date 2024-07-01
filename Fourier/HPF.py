@@ -14,7 +14,7 @@ kernel_5x5 = np.array([[-1,-1,-1,-1,-1],
                        [-1,-1,-1,-1,-1]]
 )
 
-img = cv2.imread("/Users/liu/Pictures/图像识别图片素材/withoutzjx922.png",0)
+img = cv2.imread("/Users/liu/Pictures/图像识别图片素材/lmw.jpg",0)
 k3 = ndimage.convolve(img,kernel_3x3)
 k5 = ndimage.convolve(img,kernel_5x5)
 
