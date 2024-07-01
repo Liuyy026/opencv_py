@@ -19,10 +19,10 @@ class Cameo(object):
 
     def onkeypress(self, keycode):
         if keycode == 32:  # 空格键
-            self._captureManager.writeImage('screenshot.png')
+            self._captureManager.writeImage('/Users/liu/code/opencv_py/cameo/screenshot.png')
         elif keycode == 9:  # Tab 键
             if not self._captureManager.isWritingVideo:
-                self._captureManager.startWritingVideo('screencast.mp4')
+                self._captureManager.startWritingVideo('/Users/liu/code/opencv_py/cameo/screencast.mp4')
             else:
                 self._captureManager.stopWritingVideo()
         elif keycode == 27:  # Esc 键
